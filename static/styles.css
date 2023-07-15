@@ -1,0 +1,95 @@
+#map {
+    height: 600px;
+    width: 80%; /* Add this line */
+    margin: 0 auto; /* Add this line */
+}
+.main {
+    margin-left: 200px; /* Adjust the value as needed */
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #282c34;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+.state-button-container {
+    display: flex; /* Display the container as a flexbox */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Add some vertical spacing between containers */
+    color: white;
+}
+.state-button-container button {
+    background-color: #282c34; /* Change to the desired color for non-active buttons */
+    color: #ffffff; /* Change to the desired text color for non-active buttons */
+    border: none;
+}
+.state-button-container button.active {
+    background-color: #606671; /* Change to the desired color for active buttons */
+    color: #ffffff; /* Change to the desired text color for active buttons */
+}
+.popup-content {
+  width: 270px;
+  max-height: 300px;
+  padding: 20px;
+  background-color: #f2f2f2; /* Change the background color to a lighter shade */
+  color: #333333; /* Change the text color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  font-size: 12px; /* Decrease the font size */
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.column.full {
+  flex: 2;
+}
+
+.label {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+
+.value {
+  margin-top: 5px;
+  font-size: 10px; /* Decrease the font size */
+}
+
+/* Add a hover effect */
+.popup-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a transition effect */
+.popup-content {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+  
+  
